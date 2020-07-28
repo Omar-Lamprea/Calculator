@@ -1,0 +1,67 @@
+body{
+	margin: 0;
+	text-align: center;
+	height:97vh;
+}
+
+.calculator{
+	background: #c2c2c2;
+	margin: auto;
+	width: 30vw;
+	height: 80vh;
+	border: none;
+	border-radius: 10px;
+}
+.image{
+	padding: .5em
+}
+.screen{
+	background: #fff;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	width: 90%;
+	height: 20%;
+	border: none;
+	border-radius: 50px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	font-size: 70px;
+}
+.btns{
+	display: flex;
+	width: 90%;
+	height: 65%;
+	margin: 0 auto;
+}
+.btn, .btnSymbol{
+	font-size: 30px;
+	margin:5px;
+	background: #fefefe;
+	border: none;
+	border-radius: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btnSymbol{
+	background: #fbbc00;
+}
+.numbers{
+	display: grid;
+	grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+	width: 80%
+}
+.symbol{
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-left: .5em;
+	width: 25%
+}
+
+@media screen and (max-height: 750px){
+	.calculator{
+	width: 65vw;
+	height: 75vh;
+	}
+}
