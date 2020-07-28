@@ -2,7 +2,9 @@ let operandoA;
 let operandoB;
 let operacion;
 
+window.addEventListener('load', init);
 function init(){
+
 	const screen = document.getElementById('screen');
 	const btn0 = document.getElementById('btn0');
 	const btn1 = document.getElementById('btn1');
